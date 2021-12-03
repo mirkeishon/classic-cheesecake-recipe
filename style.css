@@ -1,0 +1,305 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	min-height: 100vh;
+}
+
+body {
+	margin: 0;
+	min-height: 100%;
+	background: #ffffff;
+	color: #000000;
+}
+
+.recipe-header {
+	height: min-content;
+	margin: 0 auto 10px auto;
+	padding-top: 20px;
+	width: 95%;
+	max-width: 1000px;
+}
+
+.recipe-title{
+	font-family: 'Playfair Display', serif;
+	font-size: 48px;
+	font-weight: 700;
+}
+
+.recipe-introduction {
+	margin-bottom: 50px;
+}
+
+.recipe-introduction-text {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: italic;
+}
+
+.recipe-introduction div {
+	display: flex;
+	align-items: flex-start;
+	width: 530px;
+	margin-bottom:30px;
+}
+
+img.recipe-introduction-icon {
+	padding: 5px 10px 0 0;
+}
+
+img.recipe-introduction-image {
+	width: 100%;
+	height: 470px;
+}
+
+.ingredients, .ingredients-title, .graham-cracker-crust, .graham-cracker-crust h3, 
+.chocolate h3, .instructions-title, .instructions-container {
+	margin-bottom: 20px;
+}
+
+.recipe-main {
+	width: 95%;
+	max-width: 1000px;
+	margin: 0 auto 60px auto;
+}
+
+.recipe-information-box {
+	display: inline-block;
+	width: 25%;
+	height: 367px;
+	border-radius: 10px;
+	float: right;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+}
+
+.servings-icon{
+	color: #f2994a;
+}
+
+.material-icons {
+    margin-right: 10px;
+}
+
+.information {
+	width: 125px;
+	margin: 48px auto;
+}
+
+.information-text-container {
+	display: inline-block;
+}
+
+.information-text{
+	font-size: 14px;
+}
+
+.information-title {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #bdbdbd;
+}
+
+.servings{
+	color: #f2994a;
+}
+
+.ingredients-and-instructions {
+	width: 60%;
+}
+
+.ingredients-title, .instructions-title{
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.graham-cracker-crust h3, .chocolate h3 {
+    font-family: 'Play Display', serif;
+    font-size: 18px;
+    font-style: italic;
+    color: #333333;
+}
+
+.graham-cracker-crust-ingredients, .chocolate-ingredients{
+	display: flex;
+	flex-direction: column;
+}
+.ingredients-element {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.ingredient-checkbox {
+	width: 21px;
+	height: 21px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.ingredients-labels:after{
+	content: "(Don't have it yet)";
+}
+
+.ingredient-checkbox:checked + .ingredients-labels {
+    color: #4bb543;
+}
+
+.ingredient-checkbox:checked + .ingredients-labels:after{
+	content:"";
+}
+
+.ingredients-labels {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	width: 90%;
+	color: #ff9494;
+    cursor: pointer;
+}
+
+.instructions-container {
+	display: flex;
+}
+
+.instructions-index {
+	font-family: 'Montserrat', serif;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 3px 0px;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	margin-right: 15px;
+	border-radius: 4px;
+	background: #f2994a;
+	color: #ffffff;
+}
+
+.instructions-content {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+.instructions {
+	margin-bottom: 40px;
+}
+.source-link{
+	font-family: 'Montserrat',sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	color: #bdbdbd;
+
+}
+
+
+
+.source a {
+	color: #bdbdbd;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.recipe-footer {
+	height: 5vh;
+}
+
+.recipe-footer p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	text-align: center;
+	color: #828282;
+	
+}
+
+.recipe-footer p a{
+	color: #a9a9a9;
+	text-decoration: none;
+}
+
+.recipe-footer p a:hover{
+	color: #000000
+}
+
+
+
+@media(max-width: 768px){
+	header.recipe-header {
+		height: min-content;
+		padding: 10px 0 20px 0;
+	}
+
+	.recipe-title {
+    	font-size: 24px;
+	}
+
+	.recipe-introduction{
+		margin-bottom: 10px;
+	}
+	.recipe-introduction div{
+		width: 100%;
+	}
+
+	.recipe-introduction-text{
+		font-size: 12px;
+	}
+
+	img.recipe-introduction-image{
+		height: 214px;
+	}
+
+	.recipe-information-box {
+		float: none;
+		width: 100%;
+		height: min-content;
+		box-shadow: none;
+		padding-bottom: 30px;
+	}
+	.information:nth-child(1) {
+		display: block;
+	}
+	.information {
+		display: inline-block;
+		width: calc(100%/3.1);
+		margin: 15px 0;
+	}
+
+	.information-title{
+		font-size: 8px;
+	}
+
+	.information-text{
+		font-size: 10px;
+	}
+	.ingredients-and-instructions {
+		width: 100%;
+	}
+	.ingredients-title, .instructions-title{
+		font-size: 18px;
+	}
+
+	.graham-cracker-crust h3, .chocolate h3{
+		font-size: 16px;
+	}
+
+	.ingredients-labels{
+		font-size: 14px;
+	}
+
+	
+	.source-link{
+		font-size: 12px;
+	}
+
+}
+
+@media(max-width: 320px){
+	.source a{
+		white-space: normal;
+	}
+}
