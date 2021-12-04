@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://cheesecake-recipe.onrender.com/">
       Demo
     </a>
     <span> | </span>
@@ -33,7 +33,7 @@
 
 ![screenshot](https://user-images.githubusercontent.com/94877748/144686838-5663696e-ab29-4083-b91f-167ccf30134a.png)
 
-- You can see the demo in this [url]
+- You can see the demo in this [url](https://cheesecake-recipe.onrender.com/)
 
 ### Built With
 
